@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>按鈕連接到Google</title>
+    <style>
+        #myButton {
+            font-size: 40px;
+            padding: 30px 60px;
+            display: none;
+        }
+        input, #checkButton {
+            font-size: 40px;
+            padding: 20px;
+        }
+    </style>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password === "TAFA") {  // 替換這裡的 "mypassword" 為你想要的密碼
+                document.getElementById("myButton").style.display = 'block';
+            } else {
+                alert("密碼錯誤，請再試一次。");
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="password" id="password" placeholder="輸入密碼">
+    <button id="checkButton" onclick="checkPassword()">確認</button>
+    <button id="myButton" onclick="window.location.href='https://autode.sk/3Cdrleb'">開啟3D檔案</button>
+</body>
+</html>
